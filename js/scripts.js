@@ -1,55 +1,29 @@
 jQuery(document).ready(function ($) {
 
+    $('body').scrollspy({target: '[role="navigation"]'});
 
-    $(window).stellar();
+    $.stellar();
 
-    var links = $('.navigation').find('li');
-    slide = $('.slide');
-    button = $('.button');
-    mywindow = $(window);
-    htmlbody = $('html,body');
+    anchors = $('a[href^=#]');
 
+    anchors.click(function(event) {
 
-    slide.waypoint(function (event, direction) {
+        // get ID from href
+        id = $(this).attr('href');
 
-        dataslide = $(this).attr('data-slide');
-
-        if (direction === 'down') {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+        if ( id === '#' ) {
+            // scroll to top
+            $('html, body').animate({
+                scrollTop: 0
+            }, 2000, 'easeInOutQuint');
+        } else {
+            // scroll to element
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 2000, 'easeInOutQuint');
         }
-        else {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
-        }
 
+        event.preventDefault();
     });
- 
-    mywindow.scroll(function () {
-        if (mywindow.scrollTop() == 0) {
-            $('.navigation li[data-slide="1"]').addClass('active');
-            $('.navigation li[data-slide="2"]').removeClass('active');
-        }
-    });
-
-    function goToByScroll(dataslide) {
-        htmlbody.animate({
-            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
-        }, 2000, 'easeInOutQuint');
-    }
-
-
-
-    links.click(function (e) {
-        e.preventDefault();
-        dataslide = $(this).attr('data-slide');
-        goToByScroll(dataslide);
-    });
-
-    button.click(function (e) {
-        e.preventDefault();
-        dataslide = $(this).attr('data-slide');
-        goToByScroll(dataslide);
-
-    });
-
 
 });
