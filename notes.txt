@@ -1,0 +1,2 @@
+- Make responsive
+- Fix the nav highlighting
