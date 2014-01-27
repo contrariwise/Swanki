@@ -50,6 +50,33 @@ ul {
 	color: #A20A06;
 }
 
+.flipped {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.upsidedown {
+    -moz-transform: scaley(-1);
+    -o-transform: scaley(-1);
+    -webkit-transform: scaley(-1);
+    transform: scaley(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+.upsideflip {
+	-moz-transform:  scaleX(-1) scaleY(-1);
+    -o-transform:  scaleX(-1) scaleY(-1);
+    -webkit-transform:  scaleX(-1) scaleY(-1);
+    transform:  scaleX(-1) scaleY(-1);
+    filter: FlipV FlipH;
+    -ms-filter: "FlipV" "FlipH";
+}
+
 
 /* Navigation */
 
@@ -94,15 +121,6 @@ ul {
 }
 
 
-.flipped {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}
-
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #DDDDDD;
 }
@@ -131,6 +149,10 @@ ul {
 	height:auto;
 	position: relative;
 	padding:140px 0;
+	
+-webkit-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 3px 3px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
 }
 
 
@@ -149,6 +171,8 @@ ul {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	
+	z-index: 5;
 }
 #welcome h1 {
 	font-size: 3.8em;
@@ -198,6 +222,8 @@ ul {
 #desc{
 	background-color:#565C5C;
 	color:#ffffff;
+	z-index: 4;
+	padding: 0px;
 }
 #desc h1 {
 	font-size: 4em;
@@ -216,7 +242,7 @@ ul {
     display: table;
 }
 
-#desc img {
+#desc .container img {
 	margin-bottom: 50px;
 }
 
@@ -224,9 +250,10 @@ ul {
 /* Services */ 
 
 #services{
-	background-color:#FF6850;
+	background-color:#333333;
 	background-image:url('../images/wrapped.jpg');
 	color: #fff;
+	z-index: 3;
 }
 #services h1 {
 	font-size: 150px;
@@ -337,7 +364,10 @@ ul {
 #gallery{
 	background-color:#A20A06;
 	color:#ffffff;
-	padding-top: 100px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	z-index: 2;
+	text-align: center;
 }
 #gallery h1 {
 	font-size: 3.8em;
@@ -346,8 +376,7 @@ ul {
 	font-weight: 700;
 	text-shadow: 3px 3px 3px #5A0503;
 	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
-	margin-bottom: 100px;
-	text-align: center;
+	margin-bottom: 60px;
 }
 #gallery h2 {
 	font-size: 2em;
@@ -433,6 +462,9 @@ ul {
 	padding: 10px;
 }
 
+#bottom-flourish{
+	margin-top: 20px;
+}
 
 @media screen and (max-width: 992px) {
 	
@@ -468,6 +500,7 @@ ul {
 	background-image:url('../images/bg.jpg');
 	color: #fff;
 	padding-top: 100px;
+	z-index: 1;
 }
 
 #contact_sec .container {
