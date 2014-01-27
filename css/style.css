@@ -223,7 +223,7 @@ box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
 	background-color:#565C5C;
 	color:#ffffff;
 	z-index: 4;
-	padding: 0px;
+	padding: 65px 10px;
 }
 
 #desc .top-flourish{
