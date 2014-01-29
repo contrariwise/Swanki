@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Alice', serif;
 	font-weight: 400;
 	font-size: 1em;
 	color: #8a8683;
@@ -82,6 +82,7 @@ ul {
 
 .navbar {
 	background-color:#565C5C;
+	font-size: 1.1em;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
@@ -89,7 +90,6 @@ ul {
 }
 
 .navbar-brand {
-	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
 	font-size: 2em;
 }
 
@@ -166,6 +166,7 @@ box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
     max-width: 100%;
     background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-attachment: scroll;
 	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -178,12 +179,14 @@ box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
 	font-size: 3.8em;
 	color:#FFF;
 	font-weight: 700;
-	text-shadow: 0 0 4px #FFFB8F;
 	margin: 0px;
 	//letter-spacing: 3px;
 	text-transform: uppercase;
-	
-	font-family: 'Sancreek', cursive;
+	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+font-family: 'Alice', serif;
 }
 
 #welcome #brand {
@@ -195,16 +198,6 @@ box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
     float: left;
 }
 
-#welcome h2 {
-	font-size: 3em;
-	color: #fff;
-	text-shadow: 1px 2px 3px #000;
-	padding-bottom:20px;
-	font-weight: 400;
-	margin-left: 40px;
-	text-align: left;
-	font-family: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
-}
 
 #welcome h3 {
 	font-family: 'Italianno';
@@ -224,6 +217,8 @@ box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
 	color:#ffffff;
 	z-index: 4;
 	padding: 65px 10px;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 1.2em;
 }
 
 #desc .top-flourish{
@@ -253,6 +248,8 @@ box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
 
 #desc .container img {
 	margin-bottom: 50px;
+	position: relative;
+	top: -40px;
 }
 
 
@@ -293,6 +290,7 @@ box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
 #services #our {
 	font-weight: 100;
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	
 }
 
 #services #are {
@@ -448,6 +446,7 @@ box-shadow:         0px 3px 3px 0px rgba(50, 50, 50, 0.75);
 	left: 0;
 	width: 100%;
 	height: 0;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	font-size: 1.1em;
 	font-weight: 400;
 	line-height: 1.4em;
