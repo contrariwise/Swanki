@@ -690,6 +690,10 @@ input.send:focus {
 	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
+#contact_info a{
+	color: #A20A06;
+}
+
 /* Tablet */
 @media screen and (max-width: 1024px) {
 
