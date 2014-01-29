@@ -253,6 +253,34 @@ font-family: 'Alice', serif;
 }
 
 
+@media screen and (max-width: 991px) {
+	
+	#desc .container img {
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+		position: static;
+		display: block;
+	}
+	
+	#desc h1 {
+		width: 410px;
+		margin-left: auto;
+		margin-right: auto;
+		position: static;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 445px) {
+	
+
+	#desc h1 {
+		width: 260px;
+		font-size: 3em;
+	}
+}
+
 /* Services */ 
 
 #services{
