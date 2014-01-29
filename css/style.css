@@ -810,6 +810,7 @@ input.send:focus {
 
 #welcome h1 {
 	line-height: 1em;
+	font-size: 3.5em;
 }
 #welcome h2 {
 	line-height: 1em;
